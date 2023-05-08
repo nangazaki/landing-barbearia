@@ -1,0 +1,73 @@
+/******* GOOGLE FONTS *******/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@300;400;500&display=swap');
+
+
+/******* VARIAVEIS *******/
+
+// Colors
+$primary: #F5CD54;
+$primary-darken: #D4B559;
+
+$bg-default: #181818;
+$bg-segondary: #EDE8D5;
+
+$white-color: #F2F2F2;
+$black-cokor: #000000;
+$gray-color: #8E8E8E;
+$gray-color-darken: #222222;
+$base-card: #202020;
+$border-title: #504A36;
+
+
+// Fonts
+$font-title: "Montserrat";
+$font-body: "Nunito";
+
+
+// Fonts Sizes
+$title-xl: 3rem;
+$title-l: 2rem;
+$title-m: 1.5rem;
+$title-s: 1.2rem;
+$text-l: 1.25rem;
+$text-m: 1rem;
+$text-s: 0.875rem;
+$text-sm: 0.75rem;
+
+
+// Containers
+$container-xl: 1440px;
+$container-l: 1140px;
+$container-m: 960px;
+$container-s: 540px;
+
+
+// Mixin of media-queries
+@mixin responsive($device) {
+    @if $device == xl {
+      // Para resoluções acima de 1440px
+      @media screen and (min-width: $container-xl) {
+        @content;
+      }
+    } @else if $device == l {
+      // Para resoluções entre 1140px e 1440px
+      @media screen and (max-width: $container-xl) and (min-width: $container-l) {
+        @content;
+      }
+    } @else if $device == m {
+      // Para resoluções entre 960px e 1140px
+      @media screen and (max-width: $container-l) and (min-width: $container-s) {
+        @content;
+      }
+    } @else if $device == s {
+      // Para resoluções menores que 960px
+      @media screen and (max-width: $container-m) {
+        @content;
+      }
+    } @else if $device == xs {
+      // Para resoluções menores que 540px
+      @media screen and (max-width: $container-s) {
+        @content;
+      }
+    }
+  }
