@@ -1,0 +1,56 @@
+@use "mixins";
+
+header {
+  @include mixins.flex;
+  @include mixins.container;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #121212;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  nav {
+    @include mixins.flex;
+
+    img {
+        cursor: pointer;
+    }
+
+    ul {
+      @include mixins.flex;
+      width: 644px;
+      margin-left: 50px;
+      column-gap: 28px;
+
+      .active {
+        color: $white-color;
+      }
+
+      li a {
+        color: $gray-color;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  button {
+    background-color: $primary;
+    color: $gray-color-darken;
+    width: 152px;
+    height: 44px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

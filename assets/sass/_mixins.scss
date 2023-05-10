@@ -1,45 +1,12 @@
-/******* GOOGLE FONTS *******/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@300;400;500&display=swap');
 
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
 
-/******* VARIAVEIS *******/
-
-// Colors
-$primary: #F5CD54;
-$primary-darken: #D4B559;
-
-$bg-default: #181818;
-$bg-segondary: #EDE8D5;
-
-$white-color: #F2F2F2;
-$black-cokor: #000000;
-$gray-color: #8E8E8E;
-$gray-color-darken: #222222;
-$base-card: #202020;
-$border-title: #504A36;
-
-
-// Fonts
-$font-title: "Montserrat";
-$font-body: "Nunito";
-
-
-// Fonts Sizes
-$title-xl: 3rem;
-$title-l: 2rem;
-$title-m: 1.5rem;
-$title-s: 1.2rem;
-$text-l: 1.25rem;
-$text-m: 1rem;
-$text-s: 0.875rem;
-$text-sm: 0.75rem;
-
-
-// Containers
-$container-xl: 1440px;
-$container-l: 1140px;
-$container-m: 960px;
-$container-s: 540px;
+@mixin container {
+  padding: 1.5% 10%;
+}
 
 
 // Mixin of media-queries
