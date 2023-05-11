@@ -1,0 +1,53 @@
+@import "mixins";
+
+footer {
+  width: 100%;
+  background-color: $bg-segondary;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  section {
+    max-width: $container-l;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .info {
+    > div {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 2.125rem;
+    background-color: $primary;
+    text-align: center;
+  }
+
+}
+
+@include responsive(xs) {
+  footer {
+    section {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: none;
+      gap: 2rem;
+    }
+  }
+}
