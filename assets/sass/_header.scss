@@ -12,7 +12,7 @@ header {
     @include mixins.flex;
 
     img {
-        cursor: pointer;
+      cursor: pointer;
     }
 
     ul {
@@ -52,5 +52,108 @@ header {
     line-height: 22px;
     text-transform: uppercase;
     cursor: pointer;
+  }
+}
+
+.btn-open {
+  position: absolute;
+  padding: 4px 12px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10%;
+
+  margin-top: -44px;
+  right: 20px;
+  display: none;
+  background-color: #121212;
+  color: $primary;
+  font-size: 1.4rem;
+}
+
+.btn-close {
+  position: absolute;
+  padding: 4.5px 12px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10%;
+
+  margin-top: -44px;
+  right: 20px;
+  display: none;
+  background-color: #121212;
+  color: $primary;
+  font-size: 1.5rem;
+}
+
+.sidenav {
+  display: none;
+  width: 100%;
+  padding: 20px 10%;
+
+  background-color: #121212;
+  position: absolute;
+  top: 48px;
+  left: -60vh;
+
+  transition: 0.5s;
+
+  ul {
+    row-gap: 28px;
+    margin-bottom: 20px;
+    .active {
+      color: $white-color;
+    }
+    li a {
+      color: $gray-color-darken;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+
+  button {
+    background-color: $primary;
+    color: $gray-color-darken;
+    width: 152px;
+    height: 44px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+@include responsive(s) {
+  header {
+    nav {
+      ul {
+        display: none;
+      }
+    }
+    button {
+      display: none;
+    }
+  }
+
+  .btn-open {
+    display: block;
+
+    &:focus ~ .btn-close {
+      display: block;
+
+      .btn-open {
+        display: none;
+      }
+    }
+    &:focus ~ .sidenav {
+      display: block;
+      left: 0;
+    }
   }
 }

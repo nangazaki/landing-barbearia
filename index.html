@@ -9,10 +9,16 @@
       href="./assets/img/scissors.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./assets/sass/style.scss" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
   </head>
 
   <body>
+    <!-- Fim Header -->
     <header>
       <nav>
         <div>
@@ -31,9 +37,35 @@
         <button>Agendar</button>
       </div>
     </header>
-    <main>
-      <h1>Barbearia</h1>
 
+    <!-- Menu -->
+    <button class="btn-open" title="menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <button class="btn-close" title="menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="sidenav">
+      <ul>
+        <li><a href="#" class="active">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Testemunhos</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Nossa Equipe</a></li>
+      </ul>
+      <div>
+        <button>Agendar</button>
+      </div>
+    </div>
+    <!-- Fim Header -->
+
+    <main>
+      <!-- Section Hero -->
+      <section id="agendar">
+        <div></div>
+      </section>
+      
       <!-- Section Agendar -->
       <section id="agendar">
         <div></div>
