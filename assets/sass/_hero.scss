@@ -1,9 +1,10 @@
 @use "mixins";
 
 #hero {
-  margin-top: 6%;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  @include mixins.flex;
+  justify-content: center;
 
   .hero {
     @include mixins.flex;
@@ -119,8 +120,6 @@
     display: block !important;
 
     .div1 {
-      margin-top: 9%;
-
       h1 {
         width: 100%;
       }
@@ -148,8 +147,6 @@
 @include responsive(xs) {
   .hero {
     .div1 {
-      margin-top: 18% !important;
-
       h1 {
         font-size: 50px !important;
       }

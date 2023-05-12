@@ -208,9 +208,11 @@ header button {
   }
 }
 #hero {
-  margin-top: 6%;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #hero .hero {
   display: flex;
@@ -315,9 +317,6 @@ header button {
   .hero {
     display: block !important;
   }
-  .hero .div1 {
-    margin-top: 9%;
-  }
   .hero .div1 h1 {
     width: 100%;
   }
@@ -336,9 +335,6 @@ header button {
   }
 }
 @media screen and (max-width: 540px) {
-  .hero .div1 {
-    margin-top: 18% !important;
-  }
   .hero .div1 h1 {
     font-size: 50px !important;
   }
@@ -356,6 +352,45 @@ header button {
     display: none;
   }
 }
+#aboutus {
+  width: 100%;
+  height: 100vh;
+  background-color: #EDE8D5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#aboutus .aboutus {
+  display: flex;
+  align-items: center;
+  padding: 1.5% 10%;
+  justify-content: center;
+  column-gap: 52px;
+}
+#aboutus .aboutus .div1 {
+  width: 100%;
+}
+#aboutus .aboutus .div2 {
+  width: 100%;
+}
+#aboutus .aboutus .div2 h2 {
+  color: #222222;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 48px;
+}
+#aboutus .aboutus .div2 p {
+  color: #222222;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  font-family: "Nunito";
+}
+
 footer {
   width: 100%;
   background-color: #EDE8D5;
