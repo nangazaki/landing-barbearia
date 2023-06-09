@@ -208,9 +208,11 @@ header button {
   }
 }
 #hero {
-  margin-top: 6%;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #hero .hero {
   display: flex;
@@ -269,6 +271,10 @@ header button {
   font-size: 18px;
   line-height: 150%;
   cursor: pointer;
+  transition: 0.5s;
+}
+#hero .hero .div1 .buttons-hero button:first-of-type:hover {
+  background-color: #dbae25;
 }
 #hero .hero .div1 .buttons-hero button:last-of-type {
   background-color: transparent;
@@ -283,6 +289,12 @@ header button {
   font-size: 18px;
   line-height: 150%;
   cursor: pointer;
+  transition: 0.5s;
+}
+#hero .hero .div1 .buttons-hero button:last-of-type:hover {
+  background-color: #F5CD54;
+  border: 1px solid #F5CD54;
+  color: #222222;
 }
 #hero .hero .div2 {
   width: 100%;
@@ -299,6 +311,84 @@ header button {
   border-radius: 6px;
   transform: rotate(-20deg);
   z-index: -1;
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    display: block !important;
+  }
+  .hero .div1 h1 {
+    width: 100%;
+  }
+  .hero .div1 p {
+    width: 100% !important;
+    margin-bottom: 38px !important;
+    margin-top: 30px !important;
+  }
+  .hero .div2 img {
+    display: none;
+  }
+  .hero .div2 .background-hero-2 {
+    top: 20% !important;
+    left: 30% !important;
+    transform: rotate(0deg) !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .hero .div1 h1 {
+    font-size: 50px !important;
+  }
+  .hero .div1 p {
+    font-size: 18px !important;
+    width: 100% !important;
+    margin-bottom: 38px !important;
+    margin-top: 30px !important;
+  }
+  .hero .div1 .buttons-hero button:first-of-type {
+    padding: 10px 21px !important;
+    font-size: 15px !important;
+  }
+  .hero .div1 .buttons-hero button:last-of-type {
+    display: none;
+  }
+}
+#aboutus {
+  width: 100%;
+  height: 100vh;
+  background-color: #EDE8D5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#aboutus .aboutus {
+  display: flex;
+  align-items: center;
+  padding: 1.5% 10%;
+  justify-content: center;
+  column-gap: 52px;
+}
+#aboutus .aboutus .div1 {
+  width: 100%;
+}
+#aboutus .aboutus .div2 {
+  width: 100%;
+}
+#aboutus .aboutus .div2 h2 {
+  color: #222222;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 48px;
+}
+#aboutus .aboutus .div2 p {
+  color: #222222;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  font-family: "Nunito";
 }
 
 footer {

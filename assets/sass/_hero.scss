@@ -1,9 +1,10 @@
 @use "mixins";
 
 #hero {
-  margin-top: 6%;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  @include mixins.flex;
+  justify-content: center;
 
   .hero {
     @include mixins.flex;
@@ -63,6 +64,11 @@
           font-size: 18px;
           line-height: 150%;
           cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            background-color: #dbae25;
+          }
         }
 
         button:last-of-type {
@@ -78,6 +84,13 @@
           font-size: 18px;
           line-height: 150%;
           cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            background-color: $primary;
+            border: 1px solid $primary;
+            color: $gray-color-darken;
+          }
         }
       }
     }
@@ -97,6 +110,62 @@
         border-radius: 6px;
         transform: rotate(-20deg);
         z-index: -1;
+      }
+    }
+  }
+}
+
+@include responsive(s) {
+  .hero {
+    display: block !important;
+
+    .div1 {
+      h1 {
+        width: 100%;
+      }
+
+      p {
+        width: 100% !important;
+        margin-bottom: 38px !important;
+        margin-top: 30px !important;
+      }
+    }
+    .div2 {
+      img {
+        display: none;
+      }
+
+      .background-hero-2 {
+        top: 20% !important;
+        left: 30% !important;
+        transform: rotate(0deg) !important;
+      }
+    }
+  }
+}
+
+@include responsive(xs) {
+  .hero {
+    .div1 {
+      h1 {
+        font-size: 50px !important;
+      }
+
+      p {
+        font-size: 18px !important;
+        width: 100% !important;
+        margin-bottom: 38px !important;
+        margin-top: 30px !important;
+      }
+
+      .buttons-hero {
+        button:first-of-type {
+          padding: 10px 21px !important;
+          font-size: 15px !important;
+        }
+        button:last-of-type {
+          display: none;
+        }
       }
     }
   }
