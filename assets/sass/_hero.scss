@@ -85,12 +85,6 @@
           line-height: 150%;
           cursor: pointer;
           transition: 0.5s;
-
-          &:hover {
-            background-color: $primary;
-            border: 1px solid $primary;
-            color: $gray-color-darken;
-          }
         }
       }
     }

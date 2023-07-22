@@ -14,40 +14,41 @@
     column-gap: 52px;
 
     .div1 {
-        width: 100%;
-    //   div {
-    //     position: absolute;
-    //     left: 156px;
-    //     top: 138px;
-    //     width: 387px;
-    //     height: 456px;
-    //     background-color: $primary;
-    //     z-index: -1;
-    //     border-radius: 6px;
-    //   }
+      width: 100%;
     }
 
     .div2 {
       width: 100%;
 
-      h2 {
-        color: $gray-color-darken;
-        text-transform: uppercase;
-        font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 59px;
-        margin-bottom: 48px;
+      div {
+        width: 390px;
+        left: -5px;
+        height: 14px;
+        position: relative;
+        top: -68px;
+        background: #f5cd54;
+        opacity: 0.6;
+        border-radius: 6px;
       }
 
+      h2 {
+        color: $gray-color-darken;
+        font-family: $font-title;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        margin-bottom: 48px;
+      }
 
       p {
         color: $gray-color-darken;
         font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 150%;
-font-family: $font-body;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        font-family: $font-body;
       }
     }
   }
