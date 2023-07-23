@@ -111,10 +111,30 @@
         </div>
       </section>
 
-      <!-- Section Agendar -->
-      <section id="agendar">
-        <div></div>
+      <!-- Section Galeria -->
+      <section id="galery">
+        <h2>Galeria</h2>
+        <div class="margin"></div>
+        <div class="galery">
+          <div>
+            <img src="/assets/img/corte1.png" alt=""  class="gallery-item">
+          </div>
+          <div>
+            <img src="/assets/img/corte2.png" alt=""  class="gallery-item">
+          </div>
+          <div>
+            <img src="/assets/img/corte3.png" alt=""  class="gallery-item">
+          </div>
+          <div>
+            <img src="/assets/img/corte4.png" alt=""  class="gallery-item">
+          </div>
+        </div>
       </section>
+
+      <div class="modal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="modal-image">
+      </div>
 
       <!-- Section Team -->
       <section id="team">
@@ -144,6 +164,7 @@
           </div>
       </section>
 
+      <!-- Section Localização -->
       <section id="location">
         <h2>LOCALIZAÇÃO</h2>
           <div class="margin"></div>
@@ -152,27 +173,29 @@
         </div>
       </section>
 
+      <!-- Section Agendar -->
       <section id="agendar">
         <h2>AGENDAR</h2>
         <div class="margin"></div>
         <form action="">
           <div>
-            <input type="text" placeholder="Nome completo">
+            <input type="text" placeholder="Nome completo" required>
           </div>
           <div>
-            <input type="text" placeholder="Telefone">
+            <input type="text" placeholder="Telefone" required>
           </div>
           <div>
-            <input type="text" placeholder="Serviço">
-            <input type="date" placeholder="">
+            <input type="text" placeholder="Serviço" required>
+            <input type="date" required>
           </div>
           <div>
             <button type="submit">CONFIRMAR AGENDAMENTO</button>
           </div>
         </form>
       </section>
-
     </main>
+
+    <!-- Footer -->
     <footer>
       <section>
         <div>

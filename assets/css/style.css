@@ -397,6 +397,104 @@ header button {
   font-family: "Nunito";
 }
 
+#galery {
+  width: 100%;
+  height: 100vh;
+  background-color: #181818;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.5% 10%;
+  flex-direction: column;
+}
+#galery h2 {
+  color: #F5CD54;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 50px;
+}
+#galery .margin {
+  width: 230px;
+  height: 14px;
+  position: relative;
+  top: -68px;
+  background: #D4B559;
+  opacity: 0.6;
+  border-radius: 6px;
+  z-index: 1;
+}
+#galery .galery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#galery .galery div img {
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0.8;
+}
+#galery .galery div img:hover {
+  opacity: 1;
+}
+#galery .galery div img:hover {
+  transform: scale(1.1);
+}
+#galery .card-member {
+  display: flex;
+  column-gap: 2rem;
+  padding-bottom: 50px;
+}
+#galery .card-member .member {
+  height: 350px;
+}
+#galery .card-member .member img {
+  object-fit: contain;
+  cursor: pointer;
+}
+#galery .card-member .member h3 {
+  color: #333;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+#galery .card-member .member p {
+  color: #333;
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.911);
+  z-index: 1111;
+}
+
+.modal-content {
+  margin: auto;
+  width: 550px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
 #team {
   width: 100%;
   height: 100vh;
@@ -416,14 +514,14 @@ header button {
   margin-bottom: 50px;
 }
 #team .margin {
-  width: 390px;
-  left: -5px;
+  width: 400px;
   height: 14px;
   position: relative;
   top: -68px;
-  background: #f5cd54;
+  background: #F5CD54;
   opacity: 0.6;
   border-radius: 6px;
+  z-index: 1;
 }
 #team .team {
   display: flex;
@@ -481,7 +579,7 @@ header button {
   height: 14px;
   position: relative;
   top: -68px;
-  background: #f5cd54;
+  background: #F5CD54;
   opacity: 0.6;
   border-radius: 6px;
 }
@@ -514,7 +612,7 @@ header button {
   height: 14px;
   position: relative;
   top: -68px;
-  background: #f5cd54;
+  background: #F5CD54;
   opacity: 0.6;
   border-radius: 6px;
 }
