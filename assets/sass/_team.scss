@@ -5,18 +5,62 @@
   height: 100vh;
   background-color: $bg-segondary;
   @include mixins.flex;
-    justify-content: center;
-    flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    color: $gray-color-darken;
+    font-family: $font-title;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 50px;
+  }
+
+  .margin {
+    width: 390px;
+    left: -5px;
+    height: 14px;
+    position: relative;
+    top: -68px;
+    background: #f5cd54;
+    opacity: 0.6;
+    border-radius: 6px;
+  }
 
   .team {
-
     @include mixins.flex;
     justify-content: center;
   }
 
   .card-member {
     display: flex;
-    column-gap: 1rem;
-    
+    column-gap: 2rem;
+    padding-bottom: 50px;
+
+    .member {
+      height: 350px;
+
+      img {
+        object-fit: contain;
+        cursor: pointer;
+      }
+
+      h3 {
+        color: #333;
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+
+      p {
+        color: #333;
+        font-family: $font-body;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
   }
 }
