@@ -13,23 +13,12 @@
 
   h2 {
     color: $primary;
-    font-family: $font-title;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 59px;
-    margin-bottom: 50px;
+    @include mixins.titlesection;
   }
 
   .margin {
     width: 230px;
-    height: 14px;
-    position: relative;
-    top: -68px;
-    background: $primary-darken;
-    opacity: 0.6;
-    border-radius: 6px;
-    z-index: 1;
+    @include mixins.yellowmargin;
   }
 
   .galery {
@@ -50,36 +39,6 @@
         &:hover {
           transform: scale(1.1);
         }
-      }
-    }
-  }
-
-  .card-member {
-    display: flex;
-    column-gap: 2rem;
-    padding-bottom: 50px;
-
-    .member {
-      height: 350px;
-
-      img {
-        object-fit: contain;
-        cursor: pointer;
-      }
-
-      h3 {
-        color: #333;
-        font-family: $font-title;
-        font-size: 24px;
-        font-weight: 600;
-        margin-top: 20px;
-      }
-
-      p {
-        color: #333;
-        font-family: $font-body;
-        font-size: 20px;
-        font-weight: 500;
       }
     }
   }
@@ -109,4 +68,25 @@
   font-size: 30px;
   color: white;
   cursor: pointer;
+}
+
+@include responsive(s) {
+  #galery {
+    height: 100%;
+    @include mixins.flex;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  .galery {
+    flex-direction: column;
+  }
+
+  .modal {
+    padding: 60px;
+
+    .modal-content {
+      width: 380px;
+      height: 350px;
+    }
+  }
 }

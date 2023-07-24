@@ -8,6 +8,7 @@
 body {
   font-family: $font-body;
   background-color: $bg-default;
+  overflow-x: hidden;
 }
 
 ::selection {

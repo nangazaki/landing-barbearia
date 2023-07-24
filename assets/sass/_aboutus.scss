@@ -15,6 +15,19 @@
 
     .div1 {
       width: 100%;
+
+      h2 {
+        color: $gray-color-darken;
+        @include mixins.titlesection;
+        display: none;
+      }
+
+      div {
+        width: 390px;
+        left: -5px;
+        @include mixins.yellowmargin;
+        display: none;
+      }
     }
 
     .div2 {
@@ -23,23 +36,12 @@
       div {
         width: 390px;
         left: -5px;
-        height: 14px;
-        position: relative;
-        top: -68px;
-        background: #f5cd54;
-        opacity: 0.6;
-        border-radius: 6px;
+        @include mixins.yellowmargin;
       }
 
       h2 {
         color: $gray-color-darken;
-        font-family: $font-title;
-        text-transform: uppercase;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 59px;
-        margin-bottom: 48px;
+        @include mixins.titlesection;
       }
 
       p {
@@ -49,6 +51,35 @@
         font-size: 20px;
         line-height: 150%;
         font-family: $font-body;
+      }
+    }
+  }
+}
+
+@include responsive(s) {
+  #aboutus {
+    height: 100%;
+    padding-bottom: 100px;
+  }
+
+  .aboutus {
+    flex-direction: column;
+
+    .div1 {
+      h2,
+      div {
+        display: block !important;
+      }
+
+      img {
+        padding-bottom: 50px;
+      }
+    }
+
+    .div2 {
+      h2,
+      div {
+        display: none;
       }
     }
   }

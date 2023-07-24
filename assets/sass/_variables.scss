@@ -1,28 +1,25 @@
 /******* GOOGLE FONTS *******/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@300;400;500&display=swap");
 
 /******* VARIAVEIS *******/
 
 // Colors
-$primary: #F5CD54;
-$primary-darken: #D4B559;
+$primary: #f5cd54;
+$primary-darken: #d4b559;
 
 $bg-default: #181818;
-$bg-segondary: #EDE8D5;
+$bg-segondary: #ede8d5;
 
-$white-color: #F2F2F2;
+$white-color: #f2f2f2;
 $black-color: #000000;
-$gray-color: #8E8E8E;
+$gray-color: #8e8e8e;
 $gray-color-darken: #222222;
 $base-card: #202020;
-$border-title: #504A36;
-
+$border-title: #504a36;
 
 // Fonts
 $font-title: "Montserrat";
 $font-body: "Nunito";
-
 
 // Fonts Sizes
 $title-xl: 3rem;
@@ -34,10 +31,8 @@ $text-m: 1rem;
 $text-s: 0.875rem;
 $text-sm: 0.75rem;
 
-
 // Containers
 $container-xl: 1440px;
 $container-l: 1140px;
 $container-m: 960px;
 $container-s: 540px;
-

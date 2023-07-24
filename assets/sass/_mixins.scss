@@ -1,3 +1,4 @@
+@import "./variables";
 
 @mixin flex {
   display: flex;
@@ -8,33 +9,52 @@
   padding: 1.5% 10%;
 }
 
+@mixin yellowmargin {
+  height: 14px;
+  position: relative;
+  top: -68px;
+  background: $primary;
+  opacity: 0.6;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+@mixin titlesection {
+  font-family: $font-title;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
 
 // Mixin of media-queries
 @mixin responsive($device) {
-    @if $device == xl {
-      // Para resoluções acima de 1440px
-      @media screen and (min-width: $container-xl) {
-        @content;
-      }
-    } @else if $device == l {
-      // Para resoluções entre 1140px e 1440px
-      @media screen and (max-width: $container-xl) and (min-width: $container-l) {
-        @content;
-      }
-    } @else if $device == m {
-      // Para resoluções entre 960px e 1140px
-      @media screen and (max-width: $container-l) and (min-width: $container-s) {
-        @content;
-      }
-    } @else if $device == s {
-      // Para resoluções menores que 960px
-      @media screen and (max-width: $container-m) {
-        @content;
-      }
-    } @else if $device == xs {
-      // Para resoluções menores que 540px
-      @media screen and (max-width: $container-s) {
-        @content;
-      }
+  @if $device == xl {
+    // Para resoluções acima de 1440px
+    @media screen and (min-width: $container-xl) {
+      @content;
+    }
+  } @else if $device == l {
+    // Para resoluções entre 1140px e 1440px
+    @media screen and (max-width: $container-xl) and (min-width: $container-l) {
+      @content;
+    }
+  } @else if $device == m {
+    // Para resoluções entre 960px e 1140px
+    @media screen and (max-width: $container-l) and (min-width: $container-s) {
+      @content;
+    }
+  } @else if $device == s {
+    // Para resoluções menores que 960px
+    @media screen and (max-width: $container-m) {
+      @content;
+    }
+  } @else if $device == xs {
+    // Para resoluções menores que 540px
+    @media screen and (max-width: $container-s) {
+      @content;
     }
   }
+}
